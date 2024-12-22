@@ -4,9 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type='text/css' href='styles.css'>
-    <title>Document</title>
+    <title>Friendship Form</title>
 </head>
 <body>
-    
+    <h1 id="title">Hazzy's Friendship Application Form</h1>
+    <p id="description">Send in an application if you want to be friends!</p>
+    <form id="survey-form">
+        <fieldset>
+            <legend>Personal Information (required)</legend>
+            <label for="first-name" id="firstname-label">Enter Your First Name: <input id="first-name" type="text" required></label>
+            <label for="last-name" id="lastname-label">Enter Your Last Name: <input id="last-name" type="text" required></label> 
+            <label for="email" id="email-label">Enter Your Email: <input id="email" type="email" required></label>
+            <label for="age" id="number-label">Enter Your Age: <input id="age" type="number" min="13" max="120"></label>
+            <label for="gender" id="gender-label"></label>
+            <label for="website">Enter Your Favorite Website: 
+                <select id="dropdown" name="dropdown">
+                    <option value="1">Select an option</option>
+                    <option value="2">YouTube</option>
+                    <option value="3">Twitch</option>
+                    <option value="4">TikTok</option>
+            </label>
+        </fieldset>
+    </form>
 </body>
 </html>
