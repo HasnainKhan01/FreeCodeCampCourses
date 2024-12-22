@@ -8,6 +8,8 @@ h1, h2 {
 
 h1 {
     font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
 }
 
 h2 {
@@ -24,6 +26,13 @@ body {
     background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
     font-family: sans-serif;
     padding: 20px;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -25px;
 }
 
 .menu {
@@ -56,6 +65,10 @@ body {
     margin-top: 25px;
 }
 
+.established {
+    font-style: italic;
+}
+
 /* FOOTER */
 
 footer {
@@ -67,7 +80,7 @@ a {
 }
 
 a:visited {
-    color: grey;
+    color: black;
 }
 
 a:hover {
@@ -75,5 +88,9 @@ a:hover {
 }
 
 a:active {
-    color:white;
+    color:brown;
+}
+
+.address {
+    margin-bottom: 5px;
 }
