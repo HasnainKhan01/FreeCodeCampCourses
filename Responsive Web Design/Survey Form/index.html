@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Friendship Form</title>
+</head>
+<body>
+    <h1 id="title">Hazzy's Friendship Application Form</h1>
+    <p id="description">Send in an application if you want to be friends!</p>
+    <form id="survey-form">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Enter your name:</label>
+            <input id="name" type="text" placeholder="Required" required>
+            
+            <label for="email">Enter your email:</label>
+            <input id="email" type="email" placeholder="Required" required>
+            
+            <label for="number">Enter your age:</label>
+            <input id="number" type="number" min="13" max="120" placeholder="Required" required>
+            
+            <fieldset>
+                <legend>Enter your gender:</legend>
+                <label for="male">
+                    <input id="male" type="radio" name="gender" value="male" checked> Male
+                </label>
+                <label for="female">
+                    <input id="female" type="radio" name="gender" value="female"> Female
+                </label>
+            </fieldset>
+            
+            <label for="dropdown">Enter your favorite website:</label>
+            <select id="dropdown" name="dropdown">
+                <option value="1">Select an option</option>
+                <option value="2">YouTube</option>
+                <option value="3">Twitch</option>
+                <option value="4">TikTok</option>
+            </select>
+            
+            <label for="bio">Provide a bio (optional):</label>
+            <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Enter your bio here:"></textarea>
+            
+            <label for="terms-and-conditions">
+                <input id="terms-and-conditions" type="checkbox" required> 
+                I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/" target="_blank">terms and conditions</a>
+            </label>
+        </fieldset>
+        
+        <input id="submit" type="submit" value="Submit">
+    </form>
+</body>
+</html>
