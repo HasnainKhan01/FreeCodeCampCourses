@@ -18,7 +18,17 @@ fieldset {
     padding: 15px;
 }
 
+fieldset fieldset {
+    margin: 0;
+    width: auto;
+    padding: 10px;
+}
+
 #submit {
     margin: 0 auto;
     display: block;
+}
+
+#number {
+    width: 70px;
 }
