@@ -41,11 +41,18 @@
             
             <label for="bio">Provide a bio (optional):</label>
             <textarea id="bio" name="bio" rows="3" cols="30" placeholder="Enter your bio here:"></textarea>
-            
-            <label for="terms-and-conditions">
-                <input id="terms-and-conditions" type="checkbox" required> 
-                I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/" target="_blank">terms and conditions</a>
+        <fieldset>
+            <legend>Friendship Preference:</legend>
+            <label>
+                <input type="checkbox" name="friendship-type" value="casual"> Casual Friendship
             </label>
+            <label>
+                <input type="checkbox" name="friendship-type" value="best-friend"> Best Friend
+            </label>
+            <label>
+                <input type="checkbox" name="friendship-type" value="hobby-partner"> Hobby Partner
+            </label>
+        </fieldset>
         </fieldset>
         
         <input id="submit" type="submit" value="Submit">
