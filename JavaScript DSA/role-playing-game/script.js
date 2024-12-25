@@ -28,7 +28,7 @@ const weapons = [
     { name: 'sword', power: 100 }
   ];
 
-  const monsters = [
+const monsters = [
     {
       name: "slime",
       level: 2,
@@ -44,9 +44,9 @@ const weapons = [
       level: 20,
       health: 300
     }
-  ];
+];
 
-  const locations = [
+const locations = [
     {
       name: "town square",
       "button text": ["Go to store", "Go to cave", "Fight dragon"],
@@ -71,4 +71,9 @@ const weapons = [
       "button functions": [attack, dodge, goTown],
       text: "You are fighting a monster."
     }
-  ];
+];
+
+// Initiliaze Buttons
+button1.onclick = goStore;
+button2.onclick = goCave;
+button3.onclick = fightDragon;
